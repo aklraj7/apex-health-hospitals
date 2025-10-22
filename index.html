@@ -6,7 +6,6 @@
   <title>Apex Health Hospitals and Labs</title>
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    /* Basic header and logo styling */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -21,9 +20,18 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
+    /* Logo container with background for visibility */
+    .logo-container {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+      border-radius: 8px;
+    }
+
     .logo {
-      width: 180px; /* displayed width */
+      width: 180px;
       height: auto;
+      display: block;
     }
 
     nav ul {
@@ -89,11 +97,10 @@
 <body>
   <header>
     <div class="navbar">
-      <!-- Retina-ready logo -->
-      <img src="assets/logo.png" 
-           srcset="assets/logo@2x.png 2x" 
-           alt="Apex Health Logo" 
-           class="logo" />
+      <!-- Transparent logo inside a container with background -->
+      <div class="logo-container">
+        <img src="assets/logo.png" alt="Apex Health Logo" class="logo">
+      </div>
 
       <nav>
         <ul>
