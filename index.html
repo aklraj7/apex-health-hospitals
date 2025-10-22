@@ -5,11 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Apex Health Hospitals and Labs</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Basic header and logo styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #f5f5f5;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      width: 180px; /* displayed width */
+      height: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #0077cc;
+    }
+
+    .hero {
+      background: url('assets/hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #005fa3;
+    }
+
+    .about {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="navbar">
-      <img src="assets/logo.png" alt="Apex Health Logo" class="logo" />
+      <!-- Retina-ready logo -->
+      <img src="assets/logo.png" 
+           srcset="assets/logo@2x.png 2x" 
+           alt="Apex Health Logo" 
+           class="logo" />
+
       <nav>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -45,3 +130,4 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+
